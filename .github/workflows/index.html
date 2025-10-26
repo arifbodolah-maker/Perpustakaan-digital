@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>AI Zéro Cybernetic</title>
+    <style>
+        /* FONT IMPORT (Monospace untuk Nuansa Cybernetic) */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+        
+        :root {
+            /* Skema Warna Cybernetic */
+            --color-bg: #101820; /* Hampir Hitam */
+            --color-primary: #1F2833; /* Dark Charcoal */
+            --color-accent: #66FCF1; /* Neon Cyan (Utama) */
+            --color-text: #C5C6C7; /* Abu-abu Dingin */
+            --color-highlight: #45A29E; /* Teal Tua */
+        }
+        
+        body {
+            font-family: 'Roboto Mono', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            overflow-x: hidden; /* Mencegah scroll horizontal */
+        }
+        
+        .container {
+            width: 95%; /* Memaksimalkan lebar di HP */
+            margin: 0 auto; /* Hilangkan margin atas/bawah yang besar di HP */
+            background: var(--color-primary);
+            padding: 20px 15px;
+            border-radius: 0; /* Hilangkan border-radius di HP untuk tampilan full-screen */
+            box-shadow: none; 
+            border-left: 5px solid var(--color-accent);
+            min-height: 100vh; /* Memastikan ketinggian penuh */
+        }
+        
+        h1 {
+            color: var(--color-accent);
+            text-align: center;
+            font-size: 2.2em; /* Ukuran default */
+            text-shadow: 0 0 8px rgba(102, 252, 241, 0.6);
+            border-bottom: 2px solid var(--color-accent);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: var(--color-highlight);
+            border-bottom: 1px solid var(--color-highlight);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: rgba(69, 162, 158, 0.1); /* Latar belakang teal transparan */
+            border-radius: 5px;
+        }
+        
+        /* Tata Letak Gambar untuk HP: Stacked Vertically */
+        .image-gallery {
+            display: block; /* Menjadi blok di HP */
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .image-item {
+            width: 100%;
+            margin-bottom: 20px; /* Jarak antar gambar */
+            text-align: center;
+            background-color: var(--color-bg);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid var(--color-highlight);
+            box-shadow: 0 0 10px rgba(102, 252, 241, 0.2);
+        }
+        .image-item img {
+            width: 100%;
+            height: 150px; /* Sedikit lebih kecil untuk HP */
+            object-fit: cover; 
+            border-radius: 3px;
+            border: 1px solid var(--color-accent);
+        }
+        .image-item p {
+            font-size: 0.8em;
+            color: var(--color-text);
+            margin-top: 8px;
+        }
+
+        strong {
+            color: var(--color-accent);
+        }
+        
+        ul, ol {
+            padding-left: 18px;
+            font-size: 0.95em;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Tombol Futuristik */
+        .button-link {
+            display: block;
+            width: 90%; /* Lebar penuh di HP */
+            margin: 30px auto 10px;
+            padding: 15px;
+            text-align: center;
+            background-color: var(--color-accent);
+            color: var(--color-bg);
+            text-decoration: none;
+            border-radius: 3px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            box-shadow: 0 0 15px var(--color-accent);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .button-link:hover {
+            background-color: #99fcf1;
+            box-shadow: 0 0 20px var(--color-accent);
+        }
+        
+        /* Media Query untuk Layar Lebih Besar (Desktop/Tablet) */
+        @media (min-width: 768px) {
+            .container {
+                width: 1000px;
+                margin: 40px auto;
+                padding: 40px;
+                border-radius: 12px;
+                min-height: auto;
+            }
+            h1 {
+                font-size: 3em; /* Ukuran judul besar di desktop */
+            }
+            .image-gallery {
+                display: flex; /* Kembali ke tata letak baris */
+            }
+            .image-item {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>AI ZÉRO CYBERNETIC PROTOCOL</h1>
+
+    <div class="section">
+        <h2>[01] Mengenal Konsep Inti</h2>
+        <p>Istilah "AI Zéro CYBERNETIC" menyoroti hubungan mendalam antara Kecerdasan Buatan (AI) dan bidang studi yang lebih tua, yaitu <strong>Sibernetika (Cybernetics)</strong>. Sibernetika, yang dipelopori oleh Norbert Wiener, adalah studi tentang kontrol dan komunikasi pada hewan dan mesin.</p>
+        <p>AI modern, terutama sistem yang menggunakan *feedback loops* dan kontrol diri, berakar kuat pada prinsip-prinsip sibernetika.</p>
+    </div>
+
+    <div class="section">
+        <h2>[02] Sibernetika: Akar Kontrol & Umpan Balik</h2>
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="https://via.placeholder.com/300x150/101820/66FCF1?text=FEEDBACK+LOOP" alt="Diagram Feedback Loop">
+                <p><strong>Umpan Balik (Feedback Loop):</strong> Mekanisme inti sibernetika untuk menyesuaikan perilaku berdasarkan hasil sebelumnya.</p>
+            </div>
+            <div class="image-item">
+                <img src="https://via.placeholder.com/300x150/101820/45A29E?text=NORBERT+WIENER" alt="Ilustrasi Norbert Wiener">
+                <p><strong>Norbert Wiener:</strong> Tokoh kunci yang menyamakan kontrol antara mesin dan organisme hidup.</p>
+            </div>
+            <div class="image-item">
+                <img src="https://via.placeholder.com/300x150/101820/66FCF1?text=SISTEM+ADAPTIF" alt="Ilustrasi Sistem AI Adaptif">
+                <p><strong>Sistem Adaptif:</strong> AI yang belajar dan menyesuaikan diri (misalnya, mobil otonom) adalah aplikasi nyata sibernetika.</p>
+            </div>
+        </div>
+        <p>Sibernetika mengajarkan prinsip kontrol: <strong>amati</strong>, <strong>bandingkan</strong> (dengan tujuan), dan <strong>bertindak</strong> (mengoreksi). Vital dalam AI:</p>
+        <ul>
+            <li>**Pembelajaran Mesin:** Proses pelatihan model secara fundamental adalah mekanisme umpan balik sibernetika.</li>
+            <li>**Robotika Otomatis:** Robot terus-menerus mengamati dan menyesuaikan gerakan—aplikasi langsung dari teori sibernetika.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>[03] Visi AI Zéro</h2>
+        <p>Konsep "AI Zéro CYBERNETIC" mengisyaratkan fokus pada bagaimana kita membangun sistem AI yang lebih <strong>stabil, dapat diprediksi, dan etis</strong> dengan kembali ke prinsip kontrol yang jelas.</p>
+        <p>Area Kunci:</p>
+        <ol>
+            <li><strong>Explainable AI (XAI):</strong> Memastikan jalur keputusan AI dapat dilacak.</li>
+            <li><strong>Zero-Day Vulnerability:</strong> Menggunakan AI untuk mendeteksi ancaman siber baru dengan menganalisis anomali.</li>
+            <li><strong>Sistem Human-Centric:</strong> Memastikan AI terintegrasi secara etis dengan ekosistem manusia.</li>
+        </ol>
+    </div>
+
+    <a href="#" class="button-link">ACCESS LOG FILE</a>
+
+</div>
+
+</body>
+</html>
